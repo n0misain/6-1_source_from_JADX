@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorZero" android:padding="@dimen/space_large" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textColor="@color/colorFour" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="If you are challenged, you need to defend by submitting a valid word containing the string."/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <android.support.v7.widget.AppCompatImageView android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/logo_app" android:adjustViewBounds="true" android:layout_weight="4"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textColor="@color/colorFour" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You win if the sumitted word is a proper English word."/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

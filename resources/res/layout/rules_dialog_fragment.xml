@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorZero" android:padding="@dimen/space_normal" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_huge" android:textStyle="bold" android:textColor="@color/colorFour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How to Play"/>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/space_large"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <WebView android:id="@+id/rulesWebView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:id="@+id/rulesProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/space_normal"/>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatButton android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/colorThree" android:id="@+id/showIntroButton" android:padding="@dimen/space_normal" android:layout_width="wrap_content" android:layout_height="@dimen/button_height_small" android:text="{faw_question_circle}  INTRO  " android:textAllCaps="false" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <android.support.v7.widget.AppCompatButton android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/colorThree" android:id="@+id/closeButton" android:padding="@dimen/space_normal" android:layout_width="wrap_content" android:layout_height="@dimen/button_height_small" android:text="CLOSE" android:textAllCaps="false" style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+</LinearLayout>

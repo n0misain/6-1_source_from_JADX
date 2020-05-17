@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/content_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/actionToolbar" android:background="@color/colorTwo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:title="Friends" app:titleTextColor="@color/colorFour" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionToolbar">
+        <android.support.v7.widget.RecyclerView android:id="@id/playerFriendsRecyclerView" android:paddingLeft="@dimen/space_small" android:paddingTop="@dimen/space_small" android:paddingRight="@dimen/space_small" android:paddingBottom="@dimen/space_fab" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/space_small" android:paddingEnd="@dimen/space_small" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/emptyNoteLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_huge" android:textStyle="bold" android:textColor="@color/colorTwo" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Friends to Show" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/colorTwo" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tap the + button to add friends" />
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/addFriendsButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_add" android:scaleType="centerCrop" app:elevation="8.0dip" app:fabSize="normal" app:useCompatPadding="true" app:backgroundTint="@color/colorFour" />
+    </FrameLayout>
+    <View android:background="@drawable/bottom_shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/actionToolbar" />
+</RelativeLayout>

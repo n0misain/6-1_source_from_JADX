@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/space_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/colorThree" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Turn" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_small" />
+    <View android:background="@color/colorThree" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</LinearLayout>

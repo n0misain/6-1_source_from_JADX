@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="appIntroDefaultPaddingLeft">80dp</dimen>
+    <dimen name="appIntroDefaultPaddingRight">80dp</dimen>
+    <dimen name="mr_dialog_fixed_width_major">50%</dimen>
+    <dimen name="mr_dialog_fixed_width_minor">70%</dimen>
+    <dimen name="tw__padding_permission_horizontal_container">128dp</dimen>
+</resources>

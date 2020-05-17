@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/colorZero" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/space_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_huge" android:textStyle="bold" android:textColor="@color/colorFour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start a new Game" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_large" />
+        <android.support.v7.widget.AppCompatButton android:enabled="false" android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/white" android:id="@id/playRandomButton" android:layout_width="fill_parent" android:layout_height="@dimen/button_height_normal" android:text="{faw-question}  PLAY VS RANDOM  " android:textAllCaps="false" app:backgroundTint="@color/colorThree" style="@style/Widget.AppCompat.Button.Colored" />
+        <android.support.v7.widget.AppCompatButton android:enabled="false" android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/white" android:id="@id/playFriendButton" android:layout_width="fill_parent" android:layout_height="@dimen/button_height_normal" android:text="{faw-smile-o}  PLAY VS FRIEND  " android:textAllCaps="false" app:backgroundTint="@color/colorTwo" style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatImageButton android:layout_gravity="end" android:id="@id/closeButton" android:padding="0.0dip" android:layout_width="@dimen/isometric_length_tiny" android:layout_height="@dimen/isometric_length_tiny" android:src="@drawable/icon_remove" android:scaleType="centerCrop" android:tint="@color/gray" app:elevation="0.0dip" style="@style/Widget.AppCompat.Button.Borderless" />
+</FrameLayout>

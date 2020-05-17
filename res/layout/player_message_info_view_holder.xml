@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0">
+        <android.support.v7.widget.CardView android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorTwo" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="true" app:cardPreventCornerOverlap="false">
+            <FrameLayout android:padding="@dimen/space_normal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/colorZero" android:gravity="end" android:id="@id/textTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla" />
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorZero" android:padding="@dimen/space_normal" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_huge" android:textStyle="bold" android:textColor="@color/colorFour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Display Name"/>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/space_large"/>
+    <android.support.v7.widget.AppCompatEditText android:textStyle="bold" android:textColor="@color/colorFour" android:textColorHint="@color/colorTwo" android:id="@+id/displayNameEditText" android:padding="@dimen/space_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Display Name" android:lines="1" android:maxLength="20" android:inputType="textPersonName" android:imeOptions="actionDone"/>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/space_normal"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatButton android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/colorThree" android:id="@+id/cancelButton" android:layout_width="0dp" android:layout_height="@dimen/button_height_small" android:text="CANCEL" android:layout_weight="1" android:textAllCaps="false" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <android.support.v7.widget.AppCompatButton android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/colorZero" android:id="@+id/submitButton" android:layout_width="0dp" android:layout_height="@dimen/button_height_small" android:text="SUBMIT" android:layout_weight="1" android:textAllCaps="false" app:backgroundTint="@color/colorThree" style="@style/Widget.AppCompat.Button.Colored"/>
+    </LinearLayout>
+</LinearLayout>

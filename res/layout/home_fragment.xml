@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/content_background" android:padding="@dimen/space_normal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/logo_app" android:adjustViewBounds="true" android:layout_weight="4.0" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatButton android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/colorZero" android:id="@id/singlePlayerButton" android:layout_width="@dimen/button_width_huge" android:layout_height="@dimen/button_height_huge" android:text="{faw_user}  SINGLE PLAYER  " android:textAllCaps="false" app:backgroundTint="@color/colorThree" />
+        <android.support.v7.widget.AppCompatButton android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/colorZero" android:id="@id/multiplayerButton" android:layout_width="@dimen/button_width_huge" android:layout_height="@dimen/button_height_huge" android:text="{faw_users}  MULTIPLAYER  " android:textAllCaps="false" app:backgroundTint="@color/colorThree" />
+        <android.support.v7.widget.AppCompatButton android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/colorZero" android:id="@id/playerProfileButton" android:layout_width="@dimen/button_width_huge" android:layout_height="@dimen/button_height_huge" android:text="{faw_user_circle_o}  PROFILE  " android:textAllCaps="false" app:backgroundTint="@color/colorTwo" />
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatImageButton android:id="@id/settingsButton" android:padding="@dimen/space_small" android:layout_width="@dimen/isometric_length_normal" android:layout_height="@dimen/isometric_length_normal" android:src="@drawable/icon_settings" android:scaleType="centerCrop" android:tint="@color/colorThree" app:elevation="0.0dip" style="@style/Widget.AppCompat.Button.Borderless" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatImageButton android:id="@id/shareButton" android:padding="@dimen/space_small" android:layout_width="@dimen/isometric_length_normal" android:layout_height="@dimen/isometric_length_normal" android:src="@drawable/icon_share" android:scaleType="centerCrop" android:tint="@color/colorThree" app:elevation="0.0dip" style="@style/Widget.AppCompat.Button.Borderless" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatImageButton android:id="@id/rulesButton" android:padding="@dimen/space_small" android:layout_width="@dimen/isometric_length_normal" android:layout_height="@dimen/isometric_length_normal" android:src="@drawable/icon_help" android:scaleType="centerCrop" android:tint="@color/colorThree" app:elevation="0.0dip" style="@style/Widget.AppCompat.Button.Borderless" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatImageButton android:id="@id/aboutButton" android:padding="@dimen/space_small" android:layout_width="@dimen/isometric_length_normal" android:layout_height="@dimen/isometric_length_normal" android:src="@drawable/icon_info" android:scaleType="centerCrop" android:tint="@color/colorThree" app:elevation="0.0dip" style="@style/Widget.AppCompat.Button.Borderless" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/content_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/tabHolderLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout android:id="@id/playerGamesTabLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/colorFour" app:tabIndicatorHeight="4.0dip" app:tabBackground="@color/colorTwo" app:tabMode="fixed" app:tabGravity="fill" app:tabTextAppearance="@style/MainTheme.TabTextAppearance" app:tabTextColor="@color/colorOne" app:tabSelectedTextColor="@color/colorFour" />
+        <android.support.v7.widget.AppCompatTextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/newGameLayout" android:background="@color/colorOne" android:padding="@dimen/space_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/playRandomLayout" android:background="@drawable/primary_button_background" android:padding="@dimen/space_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Game" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VS RANDOM" />
+        </LinearLayout>
+        <Space android:layout_width="@dimen/space_small" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/playFriendLayout" android:background="@drawable/primary_button_background" android:padding="@dimen/space_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Game" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VS FRIEND" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/newGameLayout" android:layout_below="@id/tabHolderLayout">
+        <android.support.v4.view.ViewPager android:id="@id/playerGamesViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/findRandomProgressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_small" android:layout_marginRight="@dimen/space_small" android:indeterminate="true" android:layout_above="@id/newGameLayout" android:layout_marginStart="@dimen/space_small" android:layout_marginEnd="@dimen/space_small" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <View android:background="@drawable/bottom_shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/tabHolderLayout" />
+    <View android:background="@drawable/top_shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_above="@id/newGameLayout" />
+</RelativeLayout>

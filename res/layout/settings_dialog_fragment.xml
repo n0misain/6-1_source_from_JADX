@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorZero" android:padding="@dimen/space_normal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_huge" android:textStyle="bold" android:textColor="@color/colorFour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Settings" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_large" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/space_normal" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="normal" android:textColor="@color/colorThree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_small" android:text="Sound Effects" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.kyleduo.switchbutton.SwitchButton android:id="@id/effectsSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_small" app:kswTintColor="@color/colorThree" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/space_normal" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="normal" android:textColor="@color/colorThree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_small" android:text="Music" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.kyleduo.switchbutton.SwitchButton android:id="@id/musicSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_small" app:kswTintColor="@color/colorThree" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/space_normal" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="normal" android:textColor="@color/colorThree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_small" android:text="Notifications" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.kyleduo.switchbutton.SwitchButton android:id="@id/notificationsSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_small" app:kswTintColor="@color/colorThree" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/space_normal" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="normal" android:textColor="@color/colorThree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_small" android:text="Remove Ads" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatButton android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/colorZero" android:id="@id/purchaseRemoveAdsButton" android:padding="@dimen/space_normal" android:layout_width="wrap_content" android:layout_height="@dimen/button_height_small" android:text="{faw_usd}  BUY  " android:textAllCaps="false" app:backgroundTint="@color/colorThree" style="@style/Widget.AppCompat.Button.Colored" />
+        <android.support.v7.widget.AppCompatImageView android:id="@id/removeAdsIndicatorImageView" android:visibility="gone" android:layout_width="@dimen/isometric_length_small" android:layout_height="@dimen/isometric_length_small" android:src="@drawable/icon_check" android:scaleType="centerCrop" android:tint="@color/colorThree" />
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" />
+    <android.support.v7.widget.AppCompatButton android:textSize="@dimen/text_normal" android:textStyle="normal" android:textColor="@color/colorThree" android:layout_gravity="end" android:id="@id/closeButton" android:padding="@dimen/space_normal" android:layout_width="wrap_content" android:layout_height="@dimen/button_height_small" android:text="CLOSE" android:textAllCaps="false" style="@style/Widget.AppCompat.Button.Borderless" />
+</LinearLayout>

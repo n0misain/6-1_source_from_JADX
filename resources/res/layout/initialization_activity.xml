@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@drawable/content_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <android.support.v7.widget.AppCompatImageView android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/logo_app" android:adjustViewBounds="true" android:layout_weight="3"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/space_huge"/>
+    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/space_normal"/>
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/colorFour" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Initializing... Please wait..."/>
+</LinearLayout>

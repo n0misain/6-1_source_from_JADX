@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/content_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/space_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionToolbar">
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" android:layout_weight="1.0" />
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/photoImageView" android:layout_width="@dimen/isometric_length_huge" android:layout_height="@dimen/isometric_length_huge" android:src="@drawable/photo_default" android:scaleType="centerCrop" app:riv_border_width="2.0dip" app:riv_border_color="@color/colorFour" app:riv_mutate_background="true" app:riv_oval="true" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/colorFour" android:ellipsize="end" android:id="@id/displayNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1" android:maxLength="20" android:layout_centerInParent="true" />
+            <android.support.v7.widget.AppCompatImageButton android:id="@id/setDisplayNameButton" android:background="@android:color/transparent" android:layout_width="@dimen/isometric_length_tiny" android:layout_height="@dimen/isometric_length_tiny" android:src="@drawable/icon_edit" android:scaleType="centerCrop" android:tint="@color/colorThree" android:layout_toRightOf="@id/displayNameTextView" android:layout_centerVertical="true" android:layout_toEndOf="@id/displayNameTextView" app:elevation="0.0dip" />
+        </RelativeLayout>
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_huge" android:textStyle="bold" android:textColor="@color/colorThree" android:id="@id/gameCountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Games: " />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" />
+        <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorOne" app:cardCornerRadius="8.0dip" app:cardElevation="2.0dip" app:cardUseCompatPadding="true" app:cardPreventCornerOverlap="false">
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/space_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/colorThree" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Won" />
+                    <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" />
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/colorThree" android:layout_gravity="center_horizontal" android:id="@id/winCountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/colorThree" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lost" />
+                    <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" />
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/colorThree" android:layout_gravity="center_horizontal" android:id="@id/loseCountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/colorThree" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Draw" />
+                    <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" />
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/colorThree" android:layout_gravity="center_horizontal" android:id="@id/drawCountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/colorThree" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ongoing" />
+                    <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" />
+                    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/colorThree" android:layout_gravity="center_horizontal" android:id="@id/ongoingCountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="italic" android:textColor="@color/colorThree" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connect with social accounts to keep data in sync across devices." />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.design.widget.FloatingActionButton android:id="@id/connectFacebookButton" android:layout_width="@dimen/isometric_length_normal" android:layout_height="@dimen/isometric_length_normal" android:layout_margin="@dimen/space_small" android:src="@drawable/icon_facebook" android:scaleType="centerCrop" app:elevation="2.0dip" app:backgroundTint="@color/colorFacebook" />
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/colorThree" android:id="@id/facebookConnectIndicatorTextView" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{faw_check}" />
+            </LinearLayout>
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.design.widget.FloatingActionButton android:id="@id/connectTwitterButton" android:layout_width="@dimen/isometric_length_normal" android:layout_height="@dimen/isometric_length_normal" android:layout_margin="@dimen/space_small" android:src="@drawable/icon_twitter" android:scaleType="centerCrop" app:elevation="2.0dip" app:backgroundTint="@color/colorTwitter" />
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/colorTwitter" android:id="@id/twitterConnectIndicatorTextView" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{faw_check}" />
+            </LinearLayout>
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.design.widget.FloatingActionButton android:id="@id/connectGoogleButton" android:layout_width="@dimen/isometric_length_normal" android:layout_height="@dimen/isometric_length_normal" android:layout_margin="@dimen/space_small" android:src="@drawable/icon_google" android:scaleType="centerCrop" app:elevation="2.0dip" app:backgroundTint="@color/colorGoogle" />
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/colorGoogle" android:id="@id/googleConnectIndicatorTextView" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{faw_check}" />
+            </LinearLayout>
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_normal" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

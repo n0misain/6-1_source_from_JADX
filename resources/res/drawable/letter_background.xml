@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <corners android:radius="8dp"/>
+    <gradient android:startColor="@color/letterBlockInner" android:endColor="@color/letterBlockOuter" android:type="radial" android:centerX="50%p" android:centerY="50%p" android:gradientRadius="100%p"/>
+    <stroke android:width="2dp" android:color="@color/letterBlockBorder"/>
+</shape>
